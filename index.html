@@ -138,69 +138,6 @@
 
     </section>
 
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 3000); // Change image every 2 seconds
-        }
-    </script>
-
-    <!-- <script>
-        let btnTopup = document.getElementById(btn_topup);
-        let btnVoucher = document.getElementById(btn_voucher);
-        let topup = document.getElementById("topup");
-        let voucher = document.getElementById("voucher");
-        btnTopup.addEventListener('click', () => {
-            topup.style.display = 'block';
-            voucher.style.display = 'none';
-        });
-
-        btnVoucher.addEventListener('click', () => {
-            topup.style.display = 'none';
-            voucher.style.display = 'block';
-        });
-
-
-    </script> -->
-
-    <script>
-        function topup() {
-            document.getElementById("topup").style.display = "block";
-            document.getElementById("voucher").style.display = "none";
-            document.getElementById("pulsa").style.display = "none";
-        }
-
-        function voucher() {
-            document.getElementById("topup").style.display = "none";
-            document.getElementById("voucher").style.display = "block";
-            document.getElementById("pulsa").style.display = "none";
-        }
-
-        function pulsa() {
-            document.getElementById("topup").style.display = "none";
-            document.getElementById("voucher").style.display = "none";
-            document.getElementById("pulsa").style.display = "block";
-
-        }
-
-
-    </script>
-
     <!-- end product -->
 
     <script src="index.js"></script>

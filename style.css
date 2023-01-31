@@ -257,6 +257,7 @@ nav ul li a:hover {
   width: 100px;
   height: 100px;
 }
+/* end team */
 
 /* gallery */
 .list-gallery {
@@ -288,6 +289,20 @@ nav ul li a:hover {
   grid-column: 1/4;
   width: 100%;
 }
+/* end gallery */
+
+/* video */
+.video {
+  background-color: #fff;
+}
+
+.countainer-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+/* end video */
 
 /* responsive */
 
@@ -354,22 +369,6 @@ nav ul li a:hover {
   .menu-toggle {
     display: flex;
   }
-
-  /* nav ul {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 35vh;
-    width: 100%;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(26, 26, 27, 0.377);
-    backdrop-filter: blur(3px);
-    margin-top: 50px;
-    transform: translateX(100%);
-    transition: all 1s;
-  } */
 
   nav ul.slide {
     transform: translateX(0);

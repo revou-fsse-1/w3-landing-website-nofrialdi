@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Takashimura store</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <img class="logo" src="images/mpl-logo.png" alt="">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- slider -->
+    <div id="slider" class="slider">
+        <figure>
+            <img src="images/comming-soon.jpg" alt>
+            <img src="images/banner-2.jpg" alt>
+            <img src="images/zyro-image.png" alt>
+            <img src="images/banner-2.jpg" alt>
+            <img src="images/comming-soon.jpg" alt>
+        </figure>
+    </div>
+    <!-- end slider -->
+
+    <section class="about">
+        <div class="header">
+            <h1>ABOUT</h1>
+        </div>
+
+        <div class="content-about">
+            <figure>
+                <img src="images/mpl-trophy.jpeg" alt="">
+            </figure>
+
+            <article class="about-mpl">
+                <p>Mobile Legends Profesional Liga Indonesia atau disingkat sebagai MPL ID, atau MPL Indonesia (bahasa
+                    Inggris: MPL Indonesia) adalah liga olahraga elektronik profesional untuk game Mobile Legends: Bang
+                    Bang di Indonesia. MPL Indonesia adalah rute langsung tim yang memenuhi syarat ke Kejuaraan Dunia
+                    Mobile Legends dan Piala Asia Tenggara Mobile Legends.</p>
+            </article>
+        </div>
+
+    </section>
+
+
+    <section class="list-team">
+        <div class="header">
+            <h1>LIST TEAM</h1>
+        </div>
+        <div class="team">
+            <div class="card">
+                <a href="">
+                    <img class="logo-team" src="images/ae-256.png" alt="">
+                    <span class="nama-team">ALTER EGO
+                    </span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <img class="logo-team" src="images/aura-256.png" alt="">
+                    <span class="nama-team">AURA
+                    </span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <img class="logo-team" src="images/btr-256.png" alt="">
+                    <span class="nama-team">BIGETRON ALPHA
+                    </span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <img class="logo-team" src="images/evos-256.png" alt="">
+                    <span class="nama-team">EVOS LEGENDS
+                    </span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <img class="logo-team" src="images/geek-256.png" alt="">
+                    <span class="nama-team">GEEK FAM
+                    </span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <img class="logo-team" src="images/onic-b-256.png" alt="">
+                    <span class="nama-team">ONIC ESPORT
+                    </span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <img class="logo-team" src="images/rebel-256.png" alt="">
+                    <span class="nama-team">REBELION ZION
+                    </span>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="">
+                    <img class="logo-team" src="images/rrq-256.png" alt="">
+                    <span class="nama-team">RRQ HOSHI
+                    </span>
+                </a>
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!-- <script>
+        let btnTopup = document.getElementById(btn_topup);
+        let btnVoucher = document.getElementById(btn_voucher);
+        let topup = document.getElementById("topup");
+        let voucher = document.getElementById("voucher");
+        btnTopup.addEventListener('click', () => {
+            topup.style.display = 'block';
+            voucher.style.display = 'none';
+        });
+
+        btnVoucher.addEventListener('click', () => {
+            topup.style.display = 'none';
+            voucher.style.display = 'block';
+        });
+
+
+    </script> -->
+
+    <script>
+        function topup() {
+            document.getElementById("topup").style.display = "block";
+            document.getElementById("voucher").style.display = "none";
+            document.getElementById("pulsa").style.display = "none";
+        }
+
+        function voucher() {
+            document.getElementById("topup").style.display = "none";
+            document.getElementById("voucher").style.display = "block";
+            document.getElementById("pulsa").style.display = "none";
+        }
+
+        function pulsa() {
+            document.getElementById("topup").style.display = "none";
+            document.getElementById("voucher").style.display = "none";
+            document.getElementById("pulsa").style.display = "block";
+
+        }
+
+
+    </script>
+
+    <!-- end product -->
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>

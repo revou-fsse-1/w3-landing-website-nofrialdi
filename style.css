@@ -187,23 +187,22 @@ nav ul li a:hover {
 
 .about {
   background-color: #fff;
+  padding: 30px;
 }
 .content-about {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #fff;
 }
 
 .content-about img {
   width: 400px;
-  margin-left: 40px;
   object-fit: cover;
 }
 
 .about-mpl {
   text-align: justify;
-  padding: 60px;
+  padding: 20px;
   color: #000;
   border-radius: 20px;
   font-size: 18px;
@@ -293,6 +292,13 @@ nav ul li a:hover {
 /* responsive */
 
 @media screen and (max-width: 768px) {
+  nav {
+    height: 50px;
+  }
+
+  .logo {
+    width: 45px;
+  }
   nav ul {
     display: 50%;
   }
@@ -301,9 +307,20 @@ nav ul li a:hover {
     font-size: 15px;
     margin: 0 20px;
   }
+
+  .content-about {
+    flex-wrap: wrap;
+  }
+
+  .content-about img {
+    width: 350px;
+  }
 }
 
 @media screen and (max-width: 426px) {
+  .logo {
+    width: 50px;
+  }
   .menu-toggle {
     display: flex;
   }
@@ -317,14 +334,19 @@ nav ul li a:hover {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(13, 9, 23);
-    margin-top: 90px;
+    background-color: rgba(8, 8, 8, 0.85);
+    backdrop-filter: blur(3px);
+    margin-top: 50px;
     transform: translateX(100%);
     transition: all 1s;
   }
 
   nav ul.slide {
     transform: translateX(0);
+  }
+
+  .content-about img {
+    width: 300px;
   }
 }
 
@@ -333,7 +355,7 @@ nav ul li a:hover {
     display: flex;
   }
 
-  nav ul {
+  /* nav ul {
     position: absolute;
     right: 0;
     top: 0;
@@ -344,10 +366,10 @@ nav ul li a:hover {
     align-items: center;
     background-color: rgba(26, 26, 27, 0.377);
     backdrop-filter: blur(3px);
-    margin-top: 90px;
+    margin-top: 50px;
     transform: translateX(100%);
     transition: all 1s;
-  }
+  } */
 
   nav ul.slide {
     transform: translateX(0);

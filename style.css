@@ -330,6 +330,17 @@ nav ul li a:hover {
   .content-about img {
     width: 350px;
   }
+
+  .gallery-1,
+  .gallery-2,
+  .gallery-3,
+  .gallery-4,
+  .gallery-5,
+  .gallery-6,
+  .gallery-7 {
+    grid-column: span 4;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 426px) {
@@ -362,17 +373,6 @@ nav ul li a:hover {
 
   .content-about img {
     width: 300px;
-  }
-
-  .gallery-1,
-  .gallery-2,
-  .gallery-3,
-  .gallery-4,
-  .gallery-5,
-  .gallery-6,
-  .gallery-7 {
-    grid-column: span 4;
-    width: 100%;
   }
 }
 

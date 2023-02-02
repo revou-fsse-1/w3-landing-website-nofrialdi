@@ -196,7 +196,7 @@
                     <legend>Personal Data:</legend>
                     <div>
                         <label for="fullName">Full Name:</label>
-                        <input id="fullName" type="text" required />
+                        <input id="fullName" name="fullName" type="text" required />
                     </div>
 
                     <div>
@@ -232,7 +232,7 @@
                         <input type="file" id="photo" name="myPhotoinmpl" required accept="image/png, image/jpeg" />
                     </div>
                 </fieldset>
-                <button type="submit">Submit</button>
+                <button onclick="submitFunction()" type="submit">Submit</button>
             </form>
         </div>
     </section>

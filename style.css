@@ -490,6 +490,10 @@ button {
     grid-column: span 4;
     width: 100%;
   }
+
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 376px) {
@@ -503,6 +507,10 @@ button {
 
   .team {
     margin: 0 20px;
+  }
+
+  .team {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

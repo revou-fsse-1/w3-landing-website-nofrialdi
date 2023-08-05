@@ -4,7 +4,7 @@
 
 ## Links/URLs:
 
-- View website : [Click here to View website !](https://week3.nofri.xyz/)
+-   View website : <https://week3.nofri.xyz/> / <https://w3-landing-website-nofrialdi.netlify.app/>
 
 # Description
 
